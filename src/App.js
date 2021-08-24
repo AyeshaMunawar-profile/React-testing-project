@@ -1,4 +1,4 @@
-import Greeting from './components/Greeting/Greeting';
+import Greeting from './container/Greeting/Greeting';
 import './App.css';
 
 function App() {
