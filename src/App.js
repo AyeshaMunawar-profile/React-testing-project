@@ -1,5 +1,6 @@
 import Greeting from './container/Greeting/Greeting';
 import './App.css';
+import Sum from './components/Sum/Sum';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         >
           Learn React
         </a>
+        <Sum />
       </header>
     </div>
   );
