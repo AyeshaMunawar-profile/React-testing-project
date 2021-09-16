@@ -1,3 +1,4 @@
+import React from 'react';
 import Greeting from './container/Greeting/Greeting';
 import './App.css';
 import Sum from './components/Sum/Sum';
@@ -8,7 +9,11 @@ function App() {
       <header className="App-header">
         <Greeting />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Edit
+          {' '}
+          <code>src/App.js</code>
+          {' '}
+          and save to reload.
         </p>
         <a
           className="App-link"
