@@ -31,7 +31,7 @@ const Sum = () => {
 		<>
 			<div style={{ paddingTop: '30px' }}>
 				<form>
-					<form>
+					<div>
 						Enter Number 1 :
 						<input
 							name='Number1'
@@ -40,7 +40,7 @@ const Sum = () => {
 							value={num1 || 0}
 							aria-label='Number1'
 						/>
-					</form>
+					</div>
 					<div>
 						Enter Number 2 :
 						<input
