@@ -6,7 +6,8 @@
     "extends": [
         "plugin:@typescript-eslint/recommended",
         "plugin:react/recommended",
-        "airbnb"
+        "airbnb",
+        "prettier"
     ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
@@ -18,7 +19,8 @@
     },
     "plugins": [
         "react",
-        "@typescript-eslint"
+        "@typescript-eslint",
+        "prettier"
     ],
     "settings": {
         "import/resolver": {
@@ -38,6 +40,17 @@
             }
         ],
         "no-shadow": "off",
-        "@typescript-eslint/no-shadow": ["error"]
+        "@typescript-eslint/no-shadow": ["error"],
+        "prettier/prettier": [
+            "error",
+            {
+                "printWidth": 80,
+                "trailingComma": "es5",
+                "semi": false,
+                "jsxSingleQuote": true,
+                "singleQuote": true,
+                "useTabs": true
+            }
+        ]
     }
 }
