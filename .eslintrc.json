@@ -29,8 +29,9 @@
     },
     "rules": {
         "no-use-before-define": "off",
+        "no-unused-vars": ["error", { "vars": "all", "args": "after-used", "ignoreRestSiblings": false }],
         "@typescript-eslint/no-use-before-define": ["error"],
-        "react/jsx-filename-extension": [ "warn", {"extensions": [".tsx"]} ],
+        "react/jsx-filename-extension": [ "error", {"extensions": [".tsx"]} ],
         "import/extensions": [
             "error",
             "ignorePackages",
