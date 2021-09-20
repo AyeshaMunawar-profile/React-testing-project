@@ -7,13 +7,21 @@ type propType = {
 	name: string
 }
 // eslint-disable-next-line no-unused-vars
-const Header = (props: propType) => (
+const Header = ({ name }: propType) => (
 	<>
-		<header className='header'>
-			<div className='wrap'>
-				<div className='logo'>
-					<img src={Logo} alt='logo' className='logo-image' />
+		<header className='header' data-test='header'>
+			<div className='wrap' data-test='wrap'>
+				<div className='logo' data-test='logo'>
+					<img
+						src={Logo}
+						alt='logo'
+						className='logo-image'
+						data-test='logo-image'
+					/>
 				</div>
+				<h1 className='title' data-test='title'>
+					{name}
+				</h1>
 			</div>
 		</header>
 	</>
